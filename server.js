@@ -4,11 +4,12 @@ const cors = require('cors')
 
 const productRoutes = require('./routes/productRoutes') //new code
 
-app.use(cors())
+
 
 // Initializing express
 const app = express()
-
+//enabling cors
+app.use(cors())
 // Body parser middleware
 app.use(express.json())
 
